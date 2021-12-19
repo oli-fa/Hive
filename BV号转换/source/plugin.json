@@ -1,0 +1,35 @@
+{
+    "name":"BV号转换",
+    "author":"菊蒻",
+    "des":"发送bili bv/av号，进行转换",
+    "logo":"ico.png",
+	"version":"1.0.1", 
+	"type":"工具",
+    "Trigger":[
+        {
+            "type":"contain",
+            "word":[
+                "bili"
+            ]
+        }
+    ],
+    "event":[
+        {
+            "id":20001,
+            "des":"频道触发消息发送",
+			"function":"message_receive"
+        },
+        {
+            "id":10001,
+            "des":"频道触发消息接收",
+            "function":"message_receive"
+        },
+        {
+            "id":10006,
+            "des":"接收成员私聊消息",
+			"function":"DIRECT_MESSAGE "
+        }
+		
+		
+    ]
+}
